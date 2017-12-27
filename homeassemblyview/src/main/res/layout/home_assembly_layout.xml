@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_add_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <View
+        android:id="@+id/layout_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#B2B2B2"/>
+
+    <com.liqi.homeassemblyview.view.ViewpagerCustom
+        android:id="@+id/layout_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:id="@+id/layout_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#B2B2B2"/>
+
+    <LinearLayout
+        android:id="@+id/layout_add_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tabbar_icon_mainpage_selected" android:state_enabled="false"/>
+    <item android:drawable="@drawable/tabbar_icon_mainpage_defult" android:state_enabled="true"/>
+    <item android:drawable="@drawable/tabbar_icon_mainpage_defult"/>
+</selector>
