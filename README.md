@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/liqinew/slidenavigation.svg)](https://jitpack.io/#liqinew/slidenavigation)
+[![](https://jitpack.io/v/liqinew/homeassemblyview.svg)](https://jitpack.io/#liqinew/homeassemblyview)
 [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E6%9D%8E%E5%A5%87-orange.svg)](https://github.com/LiqiNew)
 # HomeAssemblyView
 针对viewpager+fragment封装自定义组合界面滑动控件
@@ -25,7 +25,7 @@ allprojects {
 ```
 **2：依赖HomeAssemblyView**<br>
 ```gradle
-compile 'com.github.liqinew:slidenavigation:V.1.0'
+compile 'com.github.liqinew:homeassemblyview:V.1.0.0'
 ```
 
 #### 使用方式 ####
