@@ -24,7 +24,7 @@ public interface OnDataListAddFactoryListener {
      * 添加LayoutDisposeObj
      *
      * @param layoutDisposeObj LayoutDisposeObj对象
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     OnDataListAddFactoryListener add(LayoutDisposeObj layoutDisposeObj);
 
@@ -32,19 +32,19 @@ public interface OnDataListAddFactoryListener {
      * 添加批量LayoutDisposeObj集合对象
      *
      * @param objArrayList 批量LayoutDisposeObj集合对象
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     OnDataListAddFactoryListener addAll(ArrayList<LayoutDisposeObj> objArrayList);
 
     /**
-     * 得到获取LayoutDisposeObj集合接口
+     * 得到获取LayoutDisposeObj集合接口，并返回获取存储LayoutDisposeObj的List集合接口OnDataGetListListener
      *
      * @return OnDataGetListListener
      */
     OnDataGetListListener toGet();
 
     /**
-     * 获取LayoutDisposeObj集合接口
+     * 获取存储LayoutDisposeObj的List集合接口
      */
     interface OnDataGetListListener {
         /**

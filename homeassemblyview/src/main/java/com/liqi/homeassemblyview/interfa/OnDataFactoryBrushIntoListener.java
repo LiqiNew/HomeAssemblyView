@@ -7,9 +7,9 @@ package com.liqi.homeassemblyview.interfa;
 
 public interface OnDataFactoryBrushIntoListener {
     /**
-     * 第三方对象刷进方法
+     * 第三方对象刷进方法，并返回OnDataListAddFactoryListener->集合数据添加工厂对外操作暴露接口
      *
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     OnDataListAddFactoryListener brushIntoList();
 }

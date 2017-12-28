@@ -73,7 +73,7 @@ public class HomeAssemblyLayout extends LinearLayout implements
      *                        </p>
      * @param fm              碎片管理者
      * @param location        标题显示位置：LocationShow.LAYOUT_TOP=顶部显示,LAYOUT_BOTTOM=底部显示
-     * @return
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout startLayout(
             OnDataListAddFactoryListener.OnDataGetListListener getListListener, int loadPagerCount,
@@ -142,8 +142,8 @@ public class HomeAssemblyLayout extends LinearLayout implements
     /**
      * 设置页面是否可以滑动
      *
-     * @param why
-     * @return
+     * @param why true是可以滑动，false是不能滑动。默认是true。
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout slideYesNo(boolean why) {
         if (null != mLayouwPager) {
@@ -155,11 +155,11 @@ public class HomeAssemblyLayout extends LinearLayout implements
     /**
      * 设置标题父布局Padding
      *
-     * @param left
-     * @param top
-     * @param right
-     * @param bottom
-     * @return
+     * @param left 左Padding
+     * @param top 上Padding
+     * @param right 右Padding
+     * @param bottom 下Padding
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout setSuperTitleLayoutPadding(int left, int top,
                                                          int right, int bottom) {
@@ -170,10 +170,10 @@ public class HomeAssemblyLayout extends LinearLayout implements
     }
 
     /**
-     * 设置标题父布局背景
+     * 设置标题父布局背景Drawable
      *
      * @param background Drawable类型
-     * @return
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout setSuperTitleLayoutBackdrop(Drawable background) {
         if (null != mLayoutAdd) {
@@ -185,8 +185,8 @@ public class HomeAssemblyLayout extends LinearLayout implements
     /**
      * 设置线条的颜色值
      *
-     * @param color
-     * @return
+     * @param color 线条的颜色值
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout setHintWire(@ColorRes int color) {
         findViewById(R.id.layout_top_view).setBackgroundColor(getResources().getColor(color));
@@ -195,10 +195,10 @@ public class HomeAssemblyLayout extends LinearLayout implements
     }
 
     /**
-     * 设置标题父布局背景
+     * 设置标题父布局背景颜色
      *
-     * @param resid 资源ID
-     * @return
+     * @param resid 颜色资源ID
+     * @return HomeAssemblyLayout
      */
     public HomeAssemblyLayout setSuperTitleLayoutBackdrop(@ColorRes int resid) {
         if (null != mLayoutAdd) {

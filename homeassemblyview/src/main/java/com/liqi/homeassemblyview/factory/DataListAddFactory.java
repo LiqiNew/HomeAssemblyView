@@ -20,9 +20,9 @@ public class DataListAddFactory implements OnDataFactoryBrushIntoListener, OnDat
     }
 
     /**
-     * 创建DataListAddFactory对象
+     * 创建DataListAddFactory对象，并返回对外操作接口
      *
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     public static OnDataListAddFactoryListener newDataListAddFactory() {
         return new DataListAddFactory();
@@ -46,7 +46,7 @@ public class DataListAddFactory implements OnDataFactoryBrushIntoListener, OnDat
      * 添加LayoutDisposeObj
      *
      * @param layoutDisposeObj LayoutDisposeObj对象
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     @Override
     public OnDataListAddFactoryListener add(LayoutDisposeObj layoutDisposeObj) {
@@ -58,7 +58,7 @@ public class DataListAddFactory implements OnDataFactoryBrushIntoListener, OnDat
      * 添加批量LayoutDisposeObj集合对象
      *
      * @param objArrayList 批量LayoutDisposeObj集合对象
-     * @return DataListAddFactory
+     * @return OnDataListAddFactoryListener
      */
     @Override
     public OnDataListAddFactoryListener addAll(ArrayList<LayoutDisposeObj> objArrayList) {
