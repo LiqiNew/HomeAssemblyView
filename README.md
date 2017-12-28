@@ -11,9 +11,9 @@
 
 **BaseFragment：'com.github.liqinew:basefragment:V.1.0.0'**<br>
 
-### 如何使用
+# 如何使用?
 
-#### Gradle远程依赖 ####
+### Gradle远程依赖 ###
 **1：在项目根目录build.gradley**	<br>
 ```gradle
 allprojects {
@@ -28,7 +28,7 @@ allprojects {
 compile 'com.github.liqinew:homeassemblyview:V.1.0.0'
 ```
 
-#### 使用方式 ####
+### 使用方式 ###
 **由于HomeAssemblyLayout是一个自定义控件，既可以在XML里面定义，也可以直接通过代码new出。**
 ```java
 HomeAssemblyLayout homeAssemblyLayout = (HomeAssemblyLayout) findViewById(R.id.xxxx);
@@ -54,7 +54,7 @@ HomeAssemblyLayout homeAssemblyLayout = (HomeAssemblyLayout) findViewById(R.id.x
 */
 homeAssemblyLayout.startLayout(getListListener,loadPagerCount, fm,location);
 ```
-##### 如何通过DataListAddFactory添加LayoutDisposeObj对象
+#### 如何通过DataListAddFactory添加LayoutDisposeObj对象
 **方式一**
 ```java
 /**
@@ -258,7 +258,7 @@ private OnDataListAddFactoryListener.OnDataGetListListener getDataGetListListene
                 .toGet();
     }
 ```
-#### A P I ####
+### A P I ###
 ##### HomeAssemblyLayout自定义组合布局操作API
 ```java
 /**
